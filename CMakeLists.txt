@@ -40,7 +40,7 @@ if (RH_STANDALONE_PROJECT)
         #SET_PROPERTY(GLOBAL PROPERTY RULE_LAUNCH_LINK "/home/martinus/git/rust-throttler/target/release/throttler run -g link --")
     endif()
 
-    _executable(rh "")
+    add_executable(rh "")
     target_compile_options(rh PRIVATE "-Wall -Werror")
     target_compile_options(rh PRIVATE "-Wno-deprecated-builtins")
     if (RH_no_exceptions)
